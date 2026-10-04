@@ -1,15 +1,16 @@
-import css from './Header.module.css';
+import css from "./Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className={css.header}>
-      <a href="/" aria-label="Home">
+      <Link href="/" aria-label="Home">
         NoteHub
-      </a>
+      </Link>
       <nav aria-label="Main Navigation">
         <ul className={css.navigation}>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <a href="/notes">Notes</a>
@@ -18,6 +19,6 @@ const Header = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

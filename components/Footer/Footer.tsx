@@ -1,4 +1,4 @@
-import css from './Footer.module.css';
+import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -8,13 +8,13 @@ const Footer = () => {
         <div className={css.wrap}>
           <p>Developer: Maksym Miroshnichenko</p>
           <p>
-            Contact us:
+            Contact us:{" "}
             <a href="<mailto:student@notehub.app>">student@notehub.app</a>
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
